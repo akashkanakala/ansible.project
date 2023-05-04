@@ -1,0 +1,14 @@
+---
+ - name: launching httpd
+   hosts: all
+   tasks:
+   - name: Launching httpd
+     file:
+      dest: /var/www/html/index.html
+      state: touch
+   - name: entries in index.html
+     lineinfile:
+      dest: /var/www/html/index.html
+      line: welcome to varains_home
+...
+
