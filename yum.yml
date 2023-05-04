@@ -1,0 +1,7 @@
+---
+ - name: install packages
+   hosts: all
+   tasks:
+     - name: installing packages using yum module
+       yum: pkg=httpd state=present
+...
