@@ -1,0 +1,7 @@
+---
+ - name: pinging clients
+   hosts: all
+   tasks: 
+     - name: ping all hosts
+       ping:
+...
