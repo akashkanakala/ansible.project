@@ -1,0 +1,7 @@
+---
+ - name: synchronize
+   hosts: all
+   tasks:
+    -name: synchronizing
+     synchronize: src=/tmp/akash dest=/tmp/
+...
