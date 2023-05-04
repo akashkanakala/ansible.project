@@ -1,0 +1,9 @@
+---
+ - name: service restarting
+   hosts: all
+   tasks:
+     - name: service restart
+       service: name="{{item}}" state=restarted
+       with_items:
+           - vsftpd
+
