@@ -1,0 +1,6 @@
+---
+ - name: fetch module
+   hosts: all
+   tasks:
+    - fetch: src=/tmp/linux-info dest=/tmp/
+...
